@@ -149,6 +149,5 @@ def view_stats(link_id):
         return f"查询失败: {e}"
 
 if __name__ == '__main__':
-    # Railway 会通过环境变量 PORT 分配端口，默认 5000
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
